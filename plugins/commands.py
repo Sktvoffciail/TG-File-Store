@@ -39,12 +39,21 @@ async def start(c, m, cb=False):
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}"),
-            InlineKeyboardButton('Help 💡', callback_data="help")
+            InlineKeyboardButton('MY GOD 🔥', url=f"https://t.me/{owner_username}"),
+            InlineKeyboardButton('HELP ‼️', callback_data="help")
         ],
         [
-            InlineKeyboardButton('About 📕', callback_data="about")
-        ]
+            InlineKeyboardButton('ABOUT 😍', callback_data="about")
+        ],
+        [   
+            InlineKeyboardButton('YOUR WEBSITE 🌐(Telegram Video)', url=f"https://www.sktamilmovies.ga")
+        ],
+        [
+            InlineKeyboardButton('YOUR WEBSITE 🌐(Pdisk Video)', url=f"https://www.1tamilmv.ga")
+        ],
+        [ 
+            InlineKeyboardButton('YOUR MAIN CHANNEL 💖', url=f"https://t.me/,sk_tv_offcial")
+        ],
     ]
 
     # when button home is pressed
