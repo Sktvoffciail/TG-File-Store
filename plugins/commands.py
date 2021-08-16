@@ -20,7 +20,7 @@ BATCH = []
 @Client.on_message(filters.command('start') & filters.incoming & filters.private)
 async def start(c, m, cb=False):
     if not cb:
-        send_msg = await m.reply_text("**Processing...**", quote=True)
+        send_msg = await m.reply_text("**🔷 Powered By - @Sk_Tv_Official**", quote=True)
 
     owner = await c.get_users(int(OWNER_ID))
     owner_username = owner.username if owner.username else 'Ns_bot_updates'
@@ -28,12 +28,12 @@ async def start(c, m, cb=False):
     # start text
     text = f"""Hey! {m.from_user.mention(style='md')}
 
-💡 ** I am Telegram File Store Bot**
+⚡ ** I was created for the SK Tamil Movies channel **
 
-`You can store your Telegram Media for permanent Link!`
+` ⚡ You should only use me to watch Tamil Movies, Tamil Web Series, Tamil Dubbed Movies ⚡`
 
 
-**👲 Maintained By:** {owner.mention(style='md')}
+**🔥 Created By:** {owner.mention(style='md')}
 """
 
     # Buttons
