@@ -13,17 +13,17 @@ async def forcesub(c, m):
         try:
             user = await c.get_chat_member(UPDATE_CHANNEL, m.from_user.id)
             if user.status == "kicked":
-               await m.reply_text("**Hey you are banned 😜**", quote=True)
+               await m.reply_text("**Hey {m.from_user.mention(style='md')} You Banned 🚫 By Admin You can no longer use me", quote=True)
                return
         except UserNotParticipant:
-            buttons = [[InlineKeyboardButton(text='Updates Channel 🔖', url=f"https://t.me/{UPDATE_CHANNEL}")]]
+            buttons = [[InlineKeyboardButton(text='🎥 Your Movies Channel 🎥', url=f"https://t.me/{UPDATE_CHANNEL}")]]
             if m.text:
                 if (len(m.text.split()) > 1) & ('start' in m.text):
                     decoded_data = await decode(m.text.split()[1])
                     chat_id, msg_id = decoded_data.split('_')
                     buttons.append([InlineKeyboardButton('🔄 Refresh', callback_data=f'refresh+{chat_id}+{msg_id}')])
             await m.reply_text(
-                f"Hey {m.from_user.mention(style='md')} you need join My updates channel in order to use me 😉\n\n"
+                f"Hey {m.from_user.mention(style='md')} you need join Your Movie channel in order to use me 😉\n\n"
                 "__Press the Following Button to join Now 👇__",
                 reply_markup=InlineKeyboardMarkup(buttons),
                 quote=True
