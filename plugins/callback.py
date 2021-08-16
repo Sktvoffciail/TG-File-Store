@@ -26,11 +26,11 @@ async def help_cb(c, m):
     # creating buttons
     buttons = [
         [
-            InlineKeyboardButton('Home 🏕', callback_data='home'),
-            InlineKeyboardButton('About 📕', callback_data='about')
+            InlineKeyboardButton('Home ', callback_data='home'),
+            InlineKeyboardButton('About 😍', callback_data='about')
         ],
         [
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('Close ❎', callback_data='close')
         ]
     ]
 
@@ -55,6 +55,7 @@ async def about_cb(c, m):
 
     # about text
     about_text = f"""--**My Details:**--
+
 🤖 𝐌𝐲 𝐍𝐚𝐦𝐞: {bot.mention(style='md')}
     
 📝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞: [Python 3](https://www.python.org/)
