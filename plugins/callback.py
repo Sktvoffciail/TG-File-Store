@@ -51,7 +51,7 @@ async def about_cb(c, m):
     owner = await c.get_users(int(OWNER_ID))
     bot = await c.get_me()
 
-        # about text
+    # about text
     about_text = f"""--**My Details:**--
 
 🔥 My Name: {bot.mention(style='md')}
