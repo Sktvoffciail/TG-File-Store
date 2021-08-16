@@ -54,7 +54,6 @@ async def about_cb(c, m):
     # about text
     about_text = f"""--**My Details:**--
 
-
 🤖 MY NAME: {bot.mention(style='md')}
     
 🔥 LANGUAGE: [PYTHON](https://www.python.org/)
@@ -63,7 +62,9 @@ async def about_cb(c, m):
 
 ⚡ CHANNEL: [SK TAMIL MOVIES](https://t.me/Sk_Tamil_Movies)
 
-💭 CONTACT ME OR PROMOTION: [SK MOVIES OWNER](https://t.me/Sk_Tv_Movies_Bot)"""
+💭 CONTACT ME OR PROMOTION: [SK MOVIES OWNER](https://t.me/Sk_Tv_Movies_Bot)
+
+"""
 
     # creating buttons
     buttons = [
