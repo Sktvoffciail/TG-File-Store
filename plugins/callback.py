@@ -51,26 +51,26 @@ async def about_cb(c, m):
     owner = await c.get_users(int(OWNER_ID))
     bot = await c.get_me()
 
-    # about text
+        # about text
     about_text = f"""--**My Details:**--
 
-🤖 MY NAME: {bot.mention(style='md')}
-    
-🔥 LANGUAGE: [PYTHON](https://www.python.org/)
+🔥 My Name: {bot.mention(style='md')}
 
-😍 MY GOD : {owner.mention(style='md')}
+🛠️ Language: [Python 3](https://www.python.org/)
 
-⚡ CHANNEL: [SK TAMIL MOVIES](https://t.me/Sk_Tamil_Movies)
+⚙️ Creator : {owner.mention(style='md')}
 
-💭 CONTACT ME OR PROMOTION: [SK MOVIES OWNER](https://t.me/Sk_Tv_Movies_Bot)
+💝 Your Channel : [SK MOVIES](https://t.me/Sk_Tamil_Movies)
 
+💝 Your Group : [SK MOVIES DISCUSSION](https://t.me/joinchat/rvXNsaxSqGM4MTll)
+
+💝 Main Channel : [SK TV](https://t.me/Sk_Tv_Offcial)
 """
-
     # creating buttons
     buttons = [
         [
             InlineKeyboardButton('HOME', callback_data='home'),
-            InlineKeyboardButton('HELP 💡', callback_data='help')
+            InlineKeyboardButton('HELP ', callback_data='help')
         ],
         [
             InlineKeyboardButton('CLOSE', callback_data='close')
