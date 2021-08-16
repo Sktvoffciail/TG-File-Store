@@ -52,7 +52,7 @@ async def start(c, m, cb=False):
             InlineKeyboardButton('YOUR WEBSITE 🌐(Pdisk Video)', url=f"https://www.1tamilmv.ga")
         ],
         [ 
-            InlineKeyboardButton('YOUR MAIN CHANNEL 💖', url=f"https://t.me/,sk_tv_offcial")
+            InlineKeyboardButton('YOUR MAIN CHANNEL 💖', url=f"https://t.me/Sk_Tv_Official")
         ],
     ]
 
